@@ -5,7 +5,7 @@
     <title>Adam Simpkins - eProfile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
                 </div>
 
                 <h2>Personal Information</h2>
-                <p>I was born somewhere in Sydney, where I lived for a brief six months of my life before moving down to Melbourne. I graduated from high school in 2016 and have been working as a Full-Stack developer since the end of 2017.</p>
+                <p>I was born somewhere in Sydney, where I lived for a short six months of my life before moving down to Melbourne. I graduated from high school in 2016 and have been working as a Full-Stack developer since the end of 2017.</p>
             </div>
         </section>
 
@@ -80,8 +80,8 @@
         <h1 id="project-title">Project Idea</h1>
         <section>
             <h2>Overview</h2>
-            <p>The project will be a monster tracker for the board game Gloomhaven. It will handle displaying the stats of the monsters and be able to track the different status effects and health the monster could have. The tracker will also be able to handle turn transitions for the game and automatically remove or administer the effects of the status the monsters could have.</p>
-            <p>The project will be a touch-screen compatible website or mobile app that will run on a tablet and display.</p>
+            <p>The project will be a monster tracker for the board game Gloomhaven. It will handle displaying the stats of the monsters and be able to track the different status effects and health the monster could have. The application will also track some additional information for running the game that closely relates to the monster status effects and end-of-turn effects.</p>
+            <p>The application created will be a touch-screen enabled user interface targeting landscape tablet sized screens.</p>
         </section>
 
         <section>
@@ -92,17 +92,21 @@
 
         <section>
             <h2>Description</h2>
-            <p>The aim of this project is to make a tablet sized touch-screen compatible application, either native or through a web application, that enables users to keep track of the more complicated components of the board game Gloomhaven.</p>
+            <p>The goal of this project is to make an application aimed at tablet sized touch-screen devices. This project will produce either a native IOS app or a web application. The application will enable users to keep track of the components of the board game Gloomhaven that use a lot of tokens, making it unwieldy and complex to keep track of all the details.</p>
             <p>The application will consist of a single dashboard page that can have monsters added to it. The monsters that have been added to the dashboard will be displayed in columns with the top row being the monster’s stats then. There will be ten rows below that to keep track of the maximum duplicate instances of monsters that there can be in the game at once.</p>
             <p>Each cell that can track an individual instance of a monster will keep track of the health and the status effects disarm, immobilize, invisible, muddle, poison, strengthen, stun, and wound. There will also have a button that can clear the cell when that instance of the monster is no longer in play.</p>
             <p>There are some status effects that only stick around for one turn in the game, so the dashboard will have a button to move to next turn that clears all the status effects that need to be removed.</p>
             <p>Gloomhaven has some other tokens that are used to keep track of end of turn effects. A turn counter should be displayed somewhere on the dashboard, and an element tracker should also be somewhere on the dashboard. The element tracker is a bit different to keep track of because elements have three states strong, waning, and inert. During their turn a player can activate an element and put in the strong column. At the end of the turn elements in strong will move to waning and elements in waning will move to inert.</p>
+            <p>A “nice to have” feature would be the ability to save and load play states. To make the infrastructure costs low the save and load features can be implemented locally. Implementing the local saving feature has two possible approaches for creating the implementation. The first approach would be to export the current state to a file and import the state from a file as well. The problem with this approach is that it is terrible for the user experience because the user would have to interact with their filesystem and can easily lose the save files.</p>
+            <p>The second approach would implement storing through the long-term storage APIs for JavaScript, either Web Storage API or IndexedDB API. The issue with the long-term storage approach is that it wouldn’t allow for the users to move the saves between devices.</p>
+            <p>The “optimal” but most complicated implementation for the saving feature would be to use both approaches. The long-term storage would be used for “Saving” and “Loading” the immediate storage of the data, meaning the user can load the save data without interacting with their filesystem. A feature of “Exporting” and “Importing” the saves would be implemented through the filesystem approach, that way the users can use whichever approach they want.</p>
         </section>
 
         <section>
             <h2>Tools and Technologies</h2>
-            <p>The user interface layout for this project is very similar to Trello’s user interface, with the drag and drop columns. Rather than reinvent the wheel it would be best to use Atlassian’s own drag and drop library react-beautiful-dnd.</p>
+            <p>The user interface layout for this project is very similar to Trello’s user interface, with the drag and drop capable columns. Rather than reinvent the wheel it would be best to use Atlassian’s own drag and drop library <code>react-beautiful-dnd</code> that was used to build Trello.</p>
             <p>The library uses React, to make the project compatible with the library the project will also be using React. This means that the project will be written in JavaScript (or TypeScript).</p>
+            <p>The “Saving” and “Loading” feature will use either the Web Storage API or the IndexedDB API. The Web Storage API is easier to implement but stores everything as a string. The IndexedDB approach would allow for more complex data structures for storage.</p>
             <p>There will need to be a statically hosted website to serve the compiled software. As the program at this stage in the planning doesn’t have any requirement for a backend this can literally be served from an AWS s3 bucket or something similar.</p>
         </section>
 
