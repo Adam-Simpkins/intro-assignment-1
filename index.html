@@ -2,38 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Adam Simpkins - Assignment 1</title>
+    <title>Adam Simpkins - eProfile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <section>
+        <section id="header-section">
             <div>
-                <div>
-                    <img src="portrait.jpg" alt="Portrait" />
-                </div>
-                <div>
-                    <div>
-                        Adam Simpkins <span>&bullet;</span> s3661342
-                    </div>
-                    <div>
-                        s3661342@student.rmit.edu.au
-                    </div>
-                </div>
+                <img src="portrait.jpg" alt="Portrait" />
             </div>
-            <h2>Personal Information</h2>
-            <p>I was born somewhere in Sydney, where I lived for a brief six months of my life before moving down to Melbourne. I graduated from high school in 2016 and have been working as a Full-Stack developer since the end of 2017.</p>
+            <div>
+                <h2 id="name">Adam Simpkins</h2>
+                <div id="data-table">
+                    <div class="data-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M9.493 2.853a.75.75 0 00-1.486-.205L7.545 6H4.198a.75.75 0 000 1.5h3.14l-.69 5H3.302a.75.75 0 000 1.5h3.14l-.435 3.148a.75.75 0 001.486.205L7.955 14h2.986l-.434 3.148a.75.75 0 001.486.205L12.456 14h3.346a.75.75 0 000-1.5h-3.14l.69-5h3.346a.75.75 0 000-1.5h-3.14l.435-3.147a.75.75 0 00-1.486-.205L12.045 6H9.059l.434-3.147zM8.852 7.5l-.69 5h2.986l.69-5H8.852z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>s3661342</div>
+                    <div class="data-label">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                            <path fill-rule="evenodd" d="M5.404 14.596A6.5 6.5 0 1116.5 10a1.25 1.25 0 01-2.5 0 4 4 0 10-.571 2.06A2.75 2.75 0 0018 10a8 8 0 10-2.343 5.657.75.75 0 00-1.06-1.06 6.5 6.5 0 01-9.193 0zM10 7.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div>s3661342@student.rmit.edu.au</div>
+                </div>
+
+                <h2>Personal Information</h2>
+                <p>I was born somewhere in Sydney, where I lived for a brief six months of my life before moving down to Melbourne. I graduated from high school in 2016 and have been working as a Full-Stack developer since the end of 2017.</p>
+            </div>
         </section>
 
         <section>
@@ -45,10 +45,11 @@
         </section>
 
         <section>
-            <h2>Ideal Job</h2>
-            <div>
-                <a href="https://www.seek.com.au/job/59455168?type=promoted#sol=cd6c544dd1e50f51c696cfcd6adc24f1b9e9eaab">Link</a>
-            </div>
+            <h2>
+                Ideal Job<span id="job-link"> -
+                    <a href="https://www.seek.com.au/job/59455168?type=promoted#sol=cd6c544dd1e50f51c696cfcd6adc24f1b9e9eaab">Link</a>
+                </span>
+            </h2>
             <p>This is like the job I work currently just a more senior position. I enjoy working on front-end web development and this role fits right in with my current professional experience. The job requires working with the React library to develop a front-end interface for the company’s freight management service.</p>
             <p>The job listing requests five years of experience with front-end website development, and a preference for experience with the JavaScript library, React. Meaning experience with HTML, CSS, and JavaScript. It also requests experience with GitHub and continuous integration systems. All skills I use in my current employment.</p>
             <p>I continuously strive to build new skills, and learn new libraries, frameworks and programming languages furthering my abilities and a software developer.</p>
@@ -76,11 +77,14 @@
             <p>The only takeaway that would be worth paying attention to in building a team is that it’s worth having some outgoing people to balance out the introverted people. I’ve had issues in the past when myself and all my teammates lack meaningful engagement and communication because of people not taking charge. If the same situation were to occur, it is worth me being mindful of this and trying to push myself into taking a leadership role in the group.</p>
         </section>
 
+        <h1 id="project-title">Project Idea</h1>
         <section>
-            <h1>Project Idea</h1>
             <h2>Overview</h2>
             <p>The project will be a monster tracker for the board game Gloomhaven. It will handle displaying the stats of the monsters and be able to track the different status effects and health the monster could have. The tracker will also be able to handle turn transitions for the game and automatically remove or administer the effects of the status the monsters could have.</p>
             <p>The project will be a touch-screen compatible website or mobile app that will run on a tablet and display.</p>
+        </section>
+
+        <section>
             <h2>Motivation</h2>
             <p>I am currently playing the board game Gloomhaven and one of the issues that I have encountered during my time in the game is that there can be too many tokens used to keep track of the enemies hit points and status effects. To fix this and make the running of the game smoother I would like to simplify tracking some of the information that is required when playing the game.</p>
             <p>The Gloomhaven community has already created software that can track all the data this project is looking to track. However, the issue with using the existing solutions is that they are designed to track a lot more than just the monster data. They track nearly everything to do with running the game, which doesn’t display well on touch-screen and smaller displays.</p>
@@ -112,6 +116,10 @@
             <h2>Outcome</h2>
             <p>If the project is a success, it should make playing Gloomhaven a smoother experience without removing the fun of dealing with the physical components of playing the board game. Running the game should be much quicker and require less effort to keep track of the enemy’s health and statuses.</p>
         </section>
+
+        <footer>
+            Background generated using <a href="https://app.haikei.app/">Haikei</a>
+        </footer>
     </main>
 </body>
 </html>
