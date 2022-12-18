@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam Simpkins - Assignment 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <div>
+                    <img src="portrait.jpg" alt="Portrait" />
+                </div>
+                <div>
+                    <div>
+                        Adam Simpkins <span>&bullet;</span> s3661342
+                    </div>
+                    <div>
+                        s3661342@student.rmit.edu.au
+                    </div>
+                </div>
+            </div>
+            <h2>Personal Information</h2>
+            <p>I was born somewhere in Sydney, where I lived for a brief six months of my life before moving down to Melbourne. I graduated from high school in 2016 and have been working as a Full-Stack developer since the end of 2017.</p>
+        </section>
+
+        <section>
+            <h2>Interest in IT</h2>
+            <p>I have loved computers for as long as I can remember, at a young age I would ponder about how a computer could work and how people get them to do what they wanted. At the age of ten one of my friends showed me a program called GameMaker, after which my friends and I would make lots of small games to share between each other.</p>
+            <p>In 2010 I was introduced to a humble little game called Minecraft and its extensive modding scene. I enjoyed playing Minecraft with mods so much that it inspired me to learn how to program my own mods from the game.</p>
+            <p>I did my first year of study in 2017 at the RMIT Melbourne campus before I switched to studying online when I started my full-time job at the end of the year. I chose RMIT at the time because it liked what I saw when I was checking it out in year 12.</p>
+            <p>I’ve nearly completed my studies for this program but somehow managed to miss this class. Honestly, I didn’t expect much when going into my studies as I had already taught myself a lot about programming already but enjoyed the learning about networking hardware in the first year.</p>
+        </section>
+
+        <section>
+            <h2>Ideal Job</h2>
+            <div>
+                <a href="https://www.seek.com.au/job/59455168?type=promoted#sol=cd6c544dd1e50f51c696cfcd6adc24f1b9e9eaab">Link</a>
+            </div>
+            <p>This is like the job I work currently just a more senior position. I enjoy working on front-end web development and this role fits right in with my current professional experience. The job requires working with the React library to develop a front-end interface for the company’s freight management service.</p>
+            <p>The job listing requests five years of experience with front-end website development, and a preference for experience with the JavaScript library, React. Meaning experience with HTML, CSS, and JavaScript. It also requests experience with GitHub and continuous integration systems. All skills I use in my current employment.</p>
+            <p>I continuously strive to build new skills, and learn new libraries, frameworks and programming languages furthering my abilities and a software developer.</p>
+        </section>
+
+        <section>
+            <h2>Personal Profile</h2>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Myers-Briggs</th>
+                    <td>INFP-T</td>
+                </tr>
+                <tr>
+                    <th>Learning Style (The Vark Questionnaire)</th>
+                    <td>Multimodal (VRK)</td>
+                </tr>
+                <tr>
+                    <th>DISC Personality Test</th>
+                    <td>Type C - Caution</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>I have very little personal interest in what the results or these tests show me, especially the learning style test, because they are either so incredibly shallow that they aren’t useful in any meaningful sense or (especially in the case of “leaning styles”) rebuked by the scientific community.</p>
+            <p>The only takeaway that would be worth paying attention to in building a team is that it’s worth having some outgoing people to balance out the introverted people. I’ve had issues in the past when myself and all my teammates lack meaningful engagement and communication because of people not taking charge. If the same situation were to occur, it is worth me being mindful of this and trying to push myself into taking a leadership role in the group.</p>
+        </section>
+
+        <section>
+            <h1>Project Idea</h1>
+            <h2>Overview</h2>
+            <p>The project will be a monster tracker for the board game Gloomhaven. It will handle displaying the stats of the monsters and be able to track the different status effects and health the monster could have. The tracker will also be able to handle turn transitions for the game and automatically remove or administer the effects of the status the monsters could have.</p>
+            <p>The project will be a touch-screen compatible website or mobile app that will run on a tablet and display.</p>
+            <h2>Motivation</h2>
+            <p>I am currently playing the board game Gloomhaven and one of the issues that I have encountered during my time in the game is that there can be too many tokens used to keep track of the enemies hit points and status effects. To fix this and make the running of the game smoother I would like to simplify tracking some of the information that is required when playing the game.</p>
+            <p>The Gloomhaven community has already created software that can track all the data this project is looking to track. However, the issue with using the existing solutions is that they are designed to track a lot more than just the monster data. They track nearly everything to do with running the game, which doesn’t display well on touch-screen and smaller displays.</p>
+        </section>
+
+        <section>
+            <h2>Description</h2>
+            <p>The aim of this project is to make a tablet sized touch-screen compatible application, either native or through a web application, that enables users to keep track of the more complicated components of the board game Gloomhaven.</p>
+            <p>The application will consist of a single dashboard page that can have monsters added to it. The monsters that have been added to the dashboard will be displayed in columns with the top row being the monster’s stats then. There will be ten rows below that to keep track of the maximum duplicate instances of monsters that there can be in the game at once.</p>
+            <p>Each cell that can track an individual instance of a monster will keep track of the health and the status effects disarm, immobilize, invisible, muddle, poison, strengthen, stun, and wound. There will also have a button that can clear the cell when that instance of the monster is no longer in play.</p>
+            <p>There are some status effects that only stick around for one turn in the game, so the dashboard will have a button to move to next turn that clears all the status effects that need to be removed.</p>
+            <p>Gloomhaven has some other tokens that are used to keep track of end of turn effects. A turn counter should be displayed somewhere on the dashboard, and an element tracker should also be somewhere on the dashboard. The element tracker is a bit different to keep track of because elements have three states strong, waning, and inert. During their turn a player can activate an element and put in the strong column. At the end of the turn elements in strong will move to waning and elements in waning will move to inert.</p>
+        </section>
+
+        <section>
+            <h2>Tools and Technologies</h2>
+            <p>The user interface layout for this project is very similar to Trello’s user interface, with the drag and drop columns. Rather than reinvent the wheel it would be best to use Atlassian’s own drag and drop library react-beautiful-dnd.</p>
+            <p>The library uses React, to make the project compatible with the library the project will also be using React. This means that the project will be written in JavaScript (or TypeScript).</p>
+            <p>There will need to be a statically hosted website to serve the compiled software. As the program at this stage in the planning doesn’t have any requirement for a backend this can literally be served from an AWS s3 bucket or something similar.</p>
+        </section>
+
+        <section>
+            <h2>Skills Required</h2>
+            <p>The project will require the ability to create websites with CSS and HTML, program in JavaScript (or TypeScript) and be able to use the React framework.</p>
+            <p>There are plenty of resources out there to be able to get these skills, one of the best resources for learning CSS, HTML and JavaScript is MDN Web Docs’ web development tutorials. To learn the skills required for the React framework can be found on the React website, where they have a comprehensive set of tutorials.</p>
+        </section>
+
+        <section>
+            <h2>Outcome</h2>
+            <p>If the project is a success, it should make playing Gloomhaven a smoother experience without removing the fun of dealing with the physical components of playing the board game. Running the game should be much quicker and require less effort to keep track of the enemy’s health and statuses.</p>
+        </section>
+    </main>
+</body>
+</html>
